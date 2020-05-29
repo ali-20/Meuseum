@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    
+    <title>Meusuem Information Center</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        
+        <div class="menubtn">
+            <div class="firstmenu" id="firstmenu">
+                <a href="#header">Home</a>
+                <a href="#detailsection">About</a>
+                <a href="#picturegallery">Picture Gallery</a>
+            </div>
+
+            <button id="menubtn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+
+            <div class="secondmenu" id="secondmenu">
+                <a href="#location">Location</a>
+                <a href="#footer">Contact</a>
+            </div>
+        </div>
+        
+
+        <div class="topnav">
+            <img id="navlogo" src="Assets/logo.png" alt="logo">
+
+        </div>
+
+        <div class="header" id="header">
+            <h1 class="greet" id="greet">
+                Welcome to Archive Muesuem
+            </h1>
+        </div>
+
+        <h1 class="Detailheading">About</h1>
+
+        <div class="detailsection" id="detailsection">
+            <div class="info">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, explicabo velit quasi nihil tempora quo reprehenderit, aut dignissimos itaque cupiditate facere magnam modi ipsam recusandae exercitationem consequuntur odit fuga ipsum!</p>
+            </div>
+            <div class="pic">
+                <img src="Assets/home.jpg" alt="" class="detailpic">
+
+            </div>
+        </div>
+
+        <h1 class="pictureheading">Picture Gallery</h1>
+
+        <div class="picturegallery" id="picturegallery">
+            <img class='gpic' src="Assets/alex-holyoake-_g9F-Y4p0lo-unsplash.jpg" alt="">
+            <img class='gpic' src="Assets/aranprime-NGCHu7NeqKQ-unsplash.jpg" alt="">
+            <img class='gpic' src="Assets/eric-tompkins-u6DT7nigEmw-unsplash.jpg" alt="">
+            <img class='gpic' src="Assets/home.jpg" alt="">
+            <img class='gpic' src="Assets/mana5280-o69yU0jE0Nk-unsplash.jpg" alt="">
+        </div>
+
+        <div class="location" id="location">
+
+            <div class="locationdetail">
+                <h1>Our Location</h1>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.7172670007635!2d73.05197921508636!3d33.58668944956719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df9363623e4fe5%3A0x3c1f87c32c2a6e9f!2sArmy%20Museum!5e0!3m2!1sen!2s!4v1590753270773!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="contact"><h2>Contact Us</h2></div>
+            <div class="fb">Facebook</div>
+            <div class="ins">Instagram</div>
+            <div class="twitter">Twitter</div>
+        </div>
+    
+    </div>
+
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+           
+            $('.greet').addClass('animate__animated animate__zoomInUp animate__slow animate__delay-0.5s')
+        });
+
+        $(document).ready(function(){
+            $('#navlogo').addClass('animate__animated animate__backInDown')
+        });
+
+        $(document).ready(function(){
+            $(window).scroll(function(){
+
+                var top = $(document).scrollTop();
+               
+
+                if((top>580) && top<900){
+                    $('.info').addClass('animate__animated animate__bounceInLeft ')
+                    $('.pic').addClass('animate__animated animate__bounceInRight')
+                }
+
+            });
+
+        });
+
+        $(document).ready(function(){
+            $(window).scroll(function(){
+
+                var top = $(document).scrollTop();
+                
+
+                if((top>1100) && top<1200){
+                    $('.gpic').addClass('animate__animated animate__swing ')
+                    
+                }
+
+            });
+
+        });
+
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

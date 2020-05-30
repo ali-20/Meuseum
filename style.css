@@ -22,6 +22,10 @@ body{
     right: 5vw;
     top: 3vh;
     z-index: 2;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+ 
     
    
 
@@ -55,8 +59,9 @@ body{
 
 .menubtn button{
     display: flex;
-    border-radius: 100%;
     margin-right: 10px;
+    text-align: center;
+    width: auto;
 }
 
 #menubtn{
@@ -71,8 +76,14 @@ body{
     background: darkred;
     margin: 2px;
     pointer-events: none;
+    align-items: center;
+    text-align: center;
+    
+
 
 }
+
+
 
 .wrapper{
     margin: 0;
@@ -96,7 +107,7 @@ body{
 
 .topnav img{
 
-    width: 15vw;
+    width: 11vw;
     height: auto;
     margin-left: 20px;
     position: absolute;
